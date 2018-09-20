@@ -32,6 +32,7 @@ upstream redisbackend {
 }
 ``````
 * if you want enable https
+当然要申请https证书，阿里云免费证书申请方案请参考：https://www.jianshu.com/p/4f3bccd29bd9
 ```
 	### 如果启用https协议，请打开下面ssl 配置注释
 	### ssl 配置 start
