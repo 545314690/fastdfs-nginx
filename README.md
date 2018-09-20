@@ -31,6 +31,19 @@ upstream redisbackend {
   keepalive 1024;
 }
 ``````
+* if you want enable https
+```
+	### 如果启用https协议，请打开下面ssl 配置注释
+	### ssl 配置 start
+	# ssl on;
+	# ssl_certificate   /etc/cert/214927684720376.pem;
+	# ssl_certificate_key  /etc/cert/214927684720376.key;
+	# ssl_session_timeout 5m;
+	# ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+	# ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+	# ssl_prefer_server_ciphers on;
+	### ssl 配置 end
+```
 * other conf files if you needed
 
 Build
