@@ -31,8 +31,8 @@ upstream redisbackend {
   keepalive 1024;
 }
 ``````
-* if you want enable https
-当然要申请https证书，阿里云免费证书申请方案请参考：https://www.jianshu.com/p/4f3bccd29bd9
+* 启用 https
+当然要申请https证书，放置在容器中的/etc/cert/目录，阿里云免费证书申请方案请参考：https://www.jianshu.com/p/4f3bccd29bd9
 ```
 	### 如果启用https协议，请打开下面ssl 配置注释
 	### ssl 配置 start
